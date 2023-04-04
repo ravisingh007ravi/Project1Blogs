@@ -49,6 +49,8 @@ exports.login = async (req, res) => {
 
         let { userName, password } = author;
 
+        if (userName.trim().length === 0 || password.trim().length === 0) return res.status(400).send({ status: false, msg: "please provide login details" });
+
         if (!userName) return res.status(400).send({ msg: " email is required " })
         if (!password) return res.status(400).send({ msg: "  password is required " })
 
