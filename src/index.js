@@ -18,7 +18,7 @@ const DB = `mongodb+srv://${userName}:${passWord}@cluster0.hz8vozb.mongodb.net/?
 const port = process.env.PORT || 5000;
 
 
-
+//MongoDB
 mongoose.connect(process.env.MONGODB_URI || DB)
     .then(() => console.log("Mongoose is Connected😊😊"))
     .catch((err) => console.log(err));
