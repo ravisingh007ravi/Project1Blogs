@@ -14,7 +14,7 @@ app.use(express.json());
 const userName = process.env.UserNameDB;
 const passWord = process.env.PassWordDB;
 
-const DB = `mongodb+srv://${userName}:${passWord}@cluster0.hz8vozb.mongodb.net/?retryWrites=true&w=majority`;
+const DB = `mongodb+srv://${userName}:${passWord}@cluster0.hz8vozb.mongodb.net/BlogsDataBase?retryWrites=true&w=majority`;
 const port = process.env.PORT || 5000;
 
 
