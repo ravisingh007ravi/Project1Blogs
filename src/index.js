@@ -10,11 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
-const userName = process.env.UserNameDB;
-const passWord = process.env.PassWordDB;
-
-const DB = `mongodb+srv://${userName}:${passWord}@cluster0.hz8vozb.mongodb.net/BlogsDataBase?retryWrites=true&w=majority`;
+const DB = `mongodb+srv://DeeptirthaMukherjee:QYKI3k8QSKC4I7FZ@cluster1.khatgm1.mongodb.net/BlogsMERN=true&w=majority`;
 const port = process.env.PORT || 5000;
 
 
